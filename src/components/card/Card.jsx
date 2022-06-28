@@ -1,9 +1,11 @@
+import "./Cards.scss";
 
-
-const Form = () => {
+const Card = () => {
   return (
-    <div>Form</div>
-  )
-}
+    <div>
+      <p>asd</p>
+    </div>
+  );
+};
 
-export default Form
+export default Card;
