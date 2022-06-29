@@ -15,15 +15,11 @@ const Card = ({ name, img, options }) => {
           </div>
         ) : (
           <div>
-            {options.map((info) => {
-              return (
-                <section>
-                  <ul className="infoCards">
-                    <li>{info}</li>
-                  </ul>
-                </section>
-              );
-            })}
+            <ul className="infoCards">
+              {options.map((info, index) => {
+                return <li key={index}>{info}</li>;
+              })}
+            </ul>
           </div>
         )}
       </div>
