@@ -1,7 +1,6 @@
 @import "../../scss/mixins", "../../scss/reset", "../../scss/variables";
 
 .container {
-  // font-family: "Courier New", Courier, monospace;
   background-color: $white;
   margin: 0.5rem;
   border-radius: 0.5rem;
@@ -9,8 +8,9 @@
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-  height: 5.5rem;
+  // height: 5.5rem;
   width: 40%;
+  min-width: 9rem;
   cursor: pointer;
   transition: all linear 0.5s;
   &:hover {
@@ -35,5 +35,11 @@
     font-size: 0.7rem;
     padding: 0 1rem;
     font-weight: bold;
+  }
+}
+
+@include media-sm {
+  .container {
+    width: 70%;
   }
 }
