@@ -1,5 +1,35 @@
 @import "../../scss/mixins", "../../scss/reset", "../../scss/variables";
 
-p {
-  color: red;
+.container {
+  // font-family: "Courier New", Courier, monospace;
+  background-color: $white;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  height: 5.5rem;
+  width: 40%;
+  cursor: pointer;
+  .langCards {
+    font-weight: bold;
+    flex-wrap: wrap;
+    text-align: center;
+    // width: 30%;
+    img {
+      height: 3rem;
+      &:hover {
+        transform: scale(1.1);
+        transition: all linear 0.5s;
+      }
+    }
+  }
+  .infoCards {
+    width: 8rem;
+    text-align: left;
+    font-size: 0.7rem;
+    padding: 0 1rem;
+    font-weight: bold;
+  }
 }

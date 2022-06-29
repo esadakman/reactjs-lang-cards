@@ -1,0 +1,41 @@
+@import "./scss/reset", "./scss/reset", "./scss/variables";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+  align-items: center;
+  // width: 100vw;
+  // height: 100vh;
+  background: rgb(255, 115, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 115, 0, 0.6702031154258579) 1%,
+    rgba(242, 141, 82, 0.16039919385723034) 100%
+  );
+  .header {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    img {
+      width: 15rem;
+    }
+  }
+  .card {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background-color: $lightOrange;
+    width: 22rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .title {
+      width: 100%;
+      text-align: center;
+      color: $white;
+      margin: 1rem 0 1.5rem 0;
+    }
+  }
+}
