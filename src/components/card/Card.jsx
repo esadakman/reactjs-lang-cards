@@ -1,42 +1,63 @@
+import React from "react";
 import { useState } from "react";
 import "./Cards.scss";
 
 const Card = ({ name, img, options }) => {
   const [select, setSelect] = useState(true);
-  const [check, setCheck] = useState(true);
 
-  const clickHandler = () => {
-    // setSelect(!select);
-    setCheck(!check);
-  };
-  const flip = () => {
-    setSelect(!select);
-    clickHandler();
-  };
   return (
-    <div className="container" onClick={flip}>
-      <div className="cards">
-        {select && (
-          <>
-            <div className="langCards">
-              <img src={img} alt="" />
-              <p>{name}</p>
-            </div>
-          </>
+    <main>
+      <div className="container" onClick={() => setSelect(!select)}>
+        {select ? (
+          <div className="langCards">
+            <img src={img} alt="" />
+            <p>{name}</p>
+          </div>
+        ) : (
+          <div>
+            {options.map((info) => {
+              return (
+                <section>
+                  <ul className="infoCards">
+                    <li>{info}</li>
+                  </ul>
+                </section>
+              );
+            })}
+          </div>
         )}
-        {!select &&
-          options.map((info) => {
-            return (
-              <div className="infoCards">
-                <ul>
-                  <li>{info}</li>
-                </ul>
-              </div>
-            );
-          })}
       </div>
-    </div>
+    </main>
   );
 };
 
 export default Card;
+
+// const [isToggle, setToggle] = useState(true);
+
+// const clickHandler = () => {
+//   setToggle(!isToggle);
+// };
+// const flip = () => {
+//   setSelect(!select);
+//   clickHandler();
+// };
+
+//  {/* <div className="cards">
+//         {select && (
+//           <>
+//             <div className="langCards">
+//               <img src={img} alt="" />
+//               <p>{name}</p>
+//             </div>
+//           </>
+//         )}
+//         {!select &&
+//           options.map((info, index) => {
+//             return (
+//               <ul className="infoCards">
+//                 <li key={index}>{info}</li>
+//               </ul>
+//             );
+//           })}
+//       </div> */}

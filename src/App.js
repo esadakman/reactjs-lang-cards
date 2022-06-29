@@ -3,30 +3,26 @@ import "./App.scss";
 import data from "./helper/data";
 import logoReact from "./assets/react.svg";
 
-// {data.map((item) => {
-//   const { name, img, options } = item;
-//   console.log(name);
-// })}
-
-const App = () => {
+function App() {
   return (
-    <div className="App">
-      <div className="header">
-        <div className="logo">
-          <img src={logoReact} alt="" />
+    <>
+      <div className="App">
+        <div className="header">
+          <div className="logo">
+            <img src={logoReact} alt="" />
+          </div>
+        </div>
+        <div className="card">
+          <h2 className="title">Languages</h2>
+
+          {data.map((info, index) => {
+            // const { name, img, options } = info;
+            return <Card key={index} {...info} />;
+          })}
         </div>
       </div>
-      <div className="card">
-        <div className="title">
-          <h2>Languages</h2>
-        </div>
-        {data.map((item, index) => {
-          const { name, img, options } = item;
-          return <Card key={index} name={name} img={img} options={options} />;
-        })}
-      </div>
-    </div>
+    </>
   );
-};
+}
 
 export default App;
