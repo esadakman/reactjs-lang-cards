@@ -12,6 +12,10 @@
   height: 5.5rem;
   width: 40%;
   cursor: pointer;
+  transition: all linear 0.5s;
+  &:hover {
+    box-shadow: rgba(20, 68, 123, 0.418) 0px 0px 0px 3px;
+  }
   .langCards {
     font-weight: bold;
     flex-wrap: wrap;
@@ -19,9 +23,9 @@
     // width: 30%;
     img {
       height: 3rem;
+      transition: all 0.5s ease;
       &:hover {
-        transform: scale(1.1);
-        transition: all linear 0.5s;
+        transform: scale(1.2);
       }
     }
   }
