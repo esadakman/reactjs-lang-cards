@@ -1,31 +1,65 @@
-## Language-Cards
-
-## Description
-
-Project aims to create a Languages Cards App.
+# Language Cards
 
 ## Objective
 
-Build a Languages Cards App using ReactJS.
+- Build a Languages Cards App using ReactJS.
 
-### At the end of the project, following topics are to be covered;
+## Description
+
+- Project aims to create a Languages Cards App.
+
+- In this project for understanding react, i tried to make a simple language cards app. I get the data from locally and i use SASS for the design
+
+## Project Link
+
+##### You can reach my project from [here !](https://random-user-react.vercel.app/)
+
+### Built With
 
 - HTML
-
 - CSS
-
 - JS
-
 - ReactJS
+- SASS
 
-### At the end of the project, students will be able to;
+### Project Skeleton
 
-- improve coding skills within HTML & CSS & JS & ReactJS.
+```
+──── language-cards-react (folder)
+|
+|----readme.md
+SOLUTION
+├── public
+│     └── index.html
+├── src
+|    |── assets
+│    ├── components
+│    │            └── Card.css
+│    │            └── Card.jsx
+|    |── helper
+│    │        └── data.js
+│    ├── scss
+│    │      └── _mixins.scss
+│    │      └── _reset.scss
+│    │      └── _variable.scss
+│    ├── App.css
+│    ├── App.js
+│    ├── index.js
+├── package.json
+└── yarn.lock 
+```
 
-- use git commands (push, pull, commit, add etc.) and Github as Version Control System.
+### Installation
 
-## You can reach my project from [here !](https://language-cardss.netlify.app/)
+To run this project, install it locally using npm or yarn:
+
+```
+$ git clone https://github.com/esadakman/language-cards-react.git
+$ cd language-cards-react
+$ npm install / yarn
+$ npm start / yarn start
+```
+
+### Preview of the Project
 
 ![lang card](https://user-images.githubusercontent.com/98649983/176704717-9088f5a6-e90d-4643-ace5-c6515802463d.gif)
-
-
