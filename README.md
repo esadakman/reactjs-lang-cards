@@ -54,7 +54,7 @@ SOLUTION
 To run this project, install it locally using npm or yarn:
 
 ```
-$ git clone https://github.com/esadakman/language-cards-react.git
+$ git clone https://github.com/esadakman/reactjs-lang-cards.git
 $ cd language-cards-react
 $ npm install / yarn
 $ npm start / yarn start
